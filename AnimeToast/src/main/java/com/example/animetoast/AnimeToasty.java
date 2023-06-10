@@ -1,5 +1,6 @@
 package com.example.animetoast;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
@@ -27,18 +28,20 @@ public class AnimeToasty extends Toast {
         super(context);
     }
 
-    public static Toast makeToast(Context context,String msg,int animation,int duration){
+    public static Toast makeToast(Context context,String msg,int animation,int background,int duration){
 
         Toast toast = new Toast(context);
 
         View view = LayoutInflater.from(context).inflate(R.layout.custom_toast,null,false);
 
-        ConstraintLayout constraintLayout = view.findViewById(R.id.cons);
+//        ConstraintLayout constraintLayout = view.findViewById(R.id.cons);
+        CardView cardView = (CardView) view.findViewById(R.id.card);
         LottieAnimationView lottieAnimationView = view.findViewById(R.id.anim_lottie);
         TextView textView = view.findViewById(R.id.text);
 
         textView.setText(msg);
 //        constraintLayout.setBackgroundResource(background);
+        cardView.setCardBackgroundColor(background);
         lottieAnimationView.setAnimation(animation);
         lottieAnimationView.playAnimation();
 
