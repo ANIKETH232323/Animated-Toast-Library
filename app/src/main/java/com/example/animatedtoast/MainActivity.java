@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Wrong(View view) {
         AnimeToasty.makeToast(this,"You Passed",R.raw.checkright,
-                com.google.android.material.R.color.material_dynamic_neutral30,AnimeToasty.LENGTH_SHORT).show();
+                android.R.color.transparent,AnimeToasty.LENGTH_SHORT).show();
     }
 
     public void Right(View view) {

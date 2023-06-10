@@ -5,9 +5,11 @@ import android.app.Application;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -35,7 +37,7 @@ public class AnimeToasty extends Toast {
         TextView textView = view.findViewById(R.id.text);
 
         textView.setText(msg);
-        view.setBackgroundResource(background);
+        constraintLayout.setBackgroundResource(background);
         lottieAnimationView.setAnimation(animation);
         lottieAnimationView.playAnimation();
 
