@@ -5,6 +5,7 @@ import android.app.Application;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,7 +27,7 @@ public class AnimeToasty extends Toast {
         super(context);
     }
 
-    public static Toast makeToast(Context context,String msg,int animation,int background,int duration){
+    public static Toast makeToast(Context context,String msg,int animation,int duration){
 
         Toast toast = new Toast(context);
 
@@ -37,7 +38,7 @@ public class AnimeToasty extends Toast {
         TextView textView = view.findViewById(R.id.text);
 
         textView.setText(msg);
-        constraintLayout.setBackgroundResource(background);
+//        constraintLayout.setBackgroundResource(background);
         lottieAnimationView.setAnimation(animation);
         lottieAnimationView.playAnimation();
 
