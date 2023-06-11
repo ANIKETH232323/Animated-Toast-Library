@@ -41,7 +41,8 @@ public class AnimeToasty extends Toast {
 
         textView.setText(msg);
 
-        cardView.setCardBackgroundColor(background);
+//        cardView.setCardBackgroundColor(background);
+        cardView.setBackgroundResource(background);
         lottieAnimationView.setAnimation(animation);
         lottieAnimationView.playAnimation();
 
