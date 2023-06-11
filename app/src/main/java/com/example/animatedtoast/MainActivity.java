@@ -16,4 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void Wrong(View view) {
+        AnimeToasty.makeToast(this,"You are Right",R.raw.loadingwrong, R.drawable.shape,
+                AnimeToasty.LENGTH_SHORT).show();
+    }
 }
