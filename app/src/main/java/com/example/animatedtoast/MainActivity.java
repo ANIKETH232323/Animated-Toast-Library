@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Wrong(View view) {
-        AnimeToasty.makeToast(this,"You Passed",R.raw.loadingwrong,R.drawable.shape,
+        AnimeToasty.makeToast(this,"You Passed",R.raw.loadingwrong, R.drawable.shape,
                 AnimeToasty.LENGTH_SHORT).show();
     }
 
