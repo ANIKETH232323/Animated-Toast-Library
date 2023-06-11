@@ -34,7 +34,6 @@ public class AnimeToasty extends Toast {
 
         View view = LayoutInflater.from(context).inflate(R.layout.custom_toast,null,false);
 
-//        ConstraintLayout constraintLayout = view.findViewById(R.id.cons);
         CardView cardView =  view.findViewById(R.id.card);
         LottieAnimationView lottieAnimationView = view.findViewById(R.id.anim_lottie);
         TextView textView = view.findViewById(R.id.text);
